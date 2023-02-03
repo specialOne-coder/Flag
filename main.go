@@ -3,6 +3,7 @@ package main
 import (
 	//"net/http"
 	"fmt"
+	"sync"
 	//"net/http"
 	// "sync"
 	// "net/http"
@@ -12,6 +13,13 @@ import (
 
 func main() {
 	fmt.Println("Start")
-	ThirdApi()
+	fmt.Println("")
+	var wg sync.WaitGroup
+	wg.Add(1)
+	go func() {
+		ThirdApi()
+	}()
+	wg.Wait()
 	fmt.Println("End API")
+	fmt.Println("")
 }

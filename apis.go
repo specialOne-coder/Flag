@@ -1,25 +1,11 @@
 package main
 
 import (
-	// "encoding/json"
-	//"fmt"
-	//"io/ioutil"
-
-	// "go/token"
-
-	//"fmt"
-	// "io/ioutil"
-	// "encoding/json"
 	"fmt"
 	"io/ioutil"
 	"net"
 	"net/http"
-
-	// "net/http"
-	// "strconv"
 	"strings"
-	// "sync"
-	//"time"
 )
 
 func FirstApi() string {
